@@ -1,0 +1,16 @@
+# This file is not used right now. For now token file has all the neccessary configurations
+
+Production:
+	NationSlug: Sluggs1
+	PrivateTokens: {dsifgskjg, skudgskdjbk, skudhskjdh}
+	PublicTokens: {skdjgksdhk,dfgdfgfg,dsfg}
+
+Staging:
+	NationSlug: Sluggs1
+	PrivateTokens: {dsifgskjg, skudgskdjbk, skudhskjdh}
+	PublicTokens: {skdjgksdhk,dfgdfgfg,dsfg}
+
+Dev:
+	NationSlug: Sluggs1
+	PrivateTokens: {dsifgskjg, skudgskdjbk, skudhskjdh}
+	PublicTokens: {skdjgksdhk,dfgdfgfg,dsfg}

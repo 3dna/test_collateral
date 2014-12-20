@@ -1,0 +1,55 @@
+def public_client
+  driver = OAuth2::Client.new('749370b02124ab1174c1904e064d5f333c6c6cff8207a3c102e23d94fa4743ff', 'a24064270d9087bb7ff3bacc5230c486926d62f881642aaaceaf23d335403dfe', :site => 'https://sharksavers.nationbuilder.com/oauth/token')
+  token = driver.client_credentials.get_token
+  puts "token:" + token.token
+  @public_client ||= NationBuilder::Client.new('sharksavers', token);
+end
+
+# This API call can be loading on the servers Be careful not to go too far.
+ describe "API Rating Limiting Tests" do
+ 	it "is API up and running" do
+ 		# 100.times do
+ 		# 	body, response  = client.call(:people, :show, id: 1)
+ 		# 	expect(body["person"]["email"]).to eq("help@nationbuilder.com")
+ 		# 	expect(response.header["X-Ratelimit-Remaining"].first.to_i).to be >= 0
+ 		# end
+ 		body, response  = public_client.call(:people, :show, id: 1)
+ 		expect(body).to be_empty
+ 		expect(response.header["X-Ratelimit-Remaining"].first.to_i).to eq(0)		
+ 	end
+ end
+
+def redirect_url
+		'http://nationbuilder.com/oauth/anything'
+end
+
+# 
+# def client
+#     # pull out the slug and the API tokens from the YML file
+#     @client ||= NationBuilder::Client.new('sharksavers', 'e3e607abcd34629a24154214f2a7b130a80b55eb3f14d7f1a1933934ad3f002b')
+# end
+
+# def public_client
+#   driver = OAuth2::Client.new('749370b02124ab1174c1904e064d5f333c6c6cff8207a3c102e23d94fa4743ff', 'a24064270d9087bb7ff3bacc5230c486926d62f881642aaaceaf23d335403dfe', :site => 'https://sharksavers.nationbuilder.com')
+#   token = driver.client_credentials.get_token
+#   puts "token:" + token.token
+#   @public_client ||= NationBuilder::Client.new('sharksavers', token);
+# end
+
+# for local host http:// doesnt work !!
+# NBUILD_URL = "abeforprez.nbuild.dev:3000" 
+# NBUILD_URL = "http://regress.nbstaging.net" 
+# NBUILD_URL = "http://3dna.nationbuilder.com" 
+
+# def goto(uri)
+# 	# puts base_url
+# 	visit "http://:nation_name.nbuild.dev:4000#{uri}"
+# end
+
+# def login_as_admin
+#     goto '/forms/user_sessions/new'
+#     fill_in 'user_session_email', with: 'help@nationbuilder.com'
+#     fill_in 'user_session_password', with: 'password'
+#     click_button 'Sign in with email'
+# end
+
