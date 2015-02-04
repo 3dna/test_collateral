@@ -1,0 +1,23 @@
+Test: 
+  slug: 'sharksavers'
+  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  endpoint: 'people'
+  method: 'show'
+  params: 
+    id: 1
+  expected_position: 
+    - 'person'
+    - 'email1'
+  expected_value: 'help@nationbuilder.com'
+ 
+Test2:
+  slug: 'sharksavers'
+  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  endpoint: 'people'
+  method: 'show'
+  params: 
+    id: 2
+  expected_position: 
+    - 'person'
+    - 'email1'
+  expected_value: 'dsingh.daiict@gmail.com'
