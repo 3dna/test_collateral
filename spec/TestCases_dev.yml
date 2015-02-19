@@ -1,20 +1,20 @@
 Test: 
   read: 'true'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'abeforprez'
+  token: 'c661ee6701b16a607b0ec7cba682f5dbf97002e1a21b73a8adf9e951829477f0'
   endpoint: 'people'
   method: 'show'
   params: 
-    id: 1
+    id: 819535
   expected_position: 
     - 'person'
     - 'email1'
-  expected_value: 'help@nationbuilder.com'
+  expected_value: 'abc2618@gmail.com'
 
 Test2:
   read: 'true'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'abeforprez'
+  token: 'c661ee6701b16a607b0ec7cba682f5dbf97002e1a21b73a8adf9e951829477f0'
   endpoint: 'people'
   method: 'index'
   params: 
@@ -23,40 +23,40 @@ Test2:
     - 'results'
     - 0
     - 'email'
-  expected_value: 'lala@gmail.com'
+  expected_value: 'abc2618@gmail.com'
 
 Test3:
   read: 'true'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'abeforprez'
+  token: 'c661ee6701b16a607b0ec7cba682f5dbf97002e1a21b73a8adf9e951829477f0'
   endpoint: 'people'
   method: 'match'
   params: 
-    email: 'dsingh.daiict@gmail.com'
+    email: 'abc2618@gmail.com'
   expected_position: 
     - 'person'
     - 'email'
-  expected_value: 'digi7@gmail.com'
+  expected_value: 'abc2618@gmail.com'
 
 Test4:
   read: 'true'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'abeforprez'
+  token: 'c661ee6701b16a607b0ec7cba682f5dbf97002e1a21b73a8adf9e951829477f0'
   endpoint: 'people'
   method: 'search'
   params: 
     first_name: 'digvijay'
   expected_position: 
     - 'results'
-    - 2
+    - 0
     - 'email'
-  expected_value: 'digi7@gmail.com'
+  expected_value: 'abc2618@gmail.com'
   note: 'please check if the search results havent changed'
 
 create:
   read: 'false'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'abeforprez'
+  token: 'c661ee6701b16a607b0ec7cba682f5dbf97002e1a21b73a8adf9e951829477f0'
   endpoint: 'people'
   method: 'create'
   params: 
@@ -70,8 +70,8 @@ create:
 
 update:
   read: 'false'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'abeforprez'
+  token: 'c661ee6701b16a607b0ec7cba682f5dbf97002e1a21b73a8adf9e951829477f0'
   endpoint: 'people'
   method: 'update'
   params: 
@@ -86,8 +86,8 @@ update:
 
 destroy:
   read: 'false'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'abeforprez'
+  token: 'c661ee6701b16a607b0ec7cba682f5dbf97002e1a21b73a8adf9e951829477f0'
   endpoint: 'people'
   method: 'destroy'
   params: 
@@ -99,8 +99,8 @@ destroy:
 
 donor_index:
   read: 'false'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'abeforprez'
+  token: 'c661ee6701b16a607b0ec7cba682f5dbf97002e1a21b73a8adf9e951829477f0'
   endpoint: 'donations'
   method: 'index'
   params: 
@@ -108,14 +108,13 @@ donor_index:
   expected_position: 
     - 'results'
     - 0
-    - donor
-    - 'email'
-  expected_value: 'digi7@gmail.com'
+    - 'succeeded_at'
+  expected_value: ''
 
 donor_create_existing:
   read: 'false'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'abeforprez'
+  token: 'c661ee6701b16a607b0ec7cba682f5dbf97002e1a21b73a8adf9e951829477f0'
   endpoint: 'donations'
   method: 'index'
   params: 
@@ -123,7 +122,7 @@ donor_create_existing:
       amount_in_cents: 50000
       payment_type_name: "Cash"
       succeeded_at: "2015-02-2T10:04:15-04:00"
-      donor_id: 87
+      donor_id: 819535
       fec_type: "Contribution"
       election: 
           cycle: "2014"
@@ -136,8 +135,8 @@ donor_create_existing:
 
 donor_create_new:
   read: 'false'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'abeforprez'
+  token: 'c661ee6701b16a607b0ec7cba682f5dbf97002e1a21b73a8adf9e951829477f0'
   endpoint: 'donations'
   method: 'index'
   params: 
@@ -158,8 +157,8 @@ donor_create_new:
 
 donor_update:
   read: 'false'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'abeforprez'
+  token: 'c661ee6701b16a607b0ec7cba682f5dbf97002e1a21b73a8adf9e951829477f0'
   endpoint: 'donations'
   method: 'update'
   params: 

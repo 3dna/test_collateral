@@ -1,7 +1,7 @@
 require 'active_support/all'
 
 # Please note that you need to be logged into abeforprez on dev machine, and then only token can be generated
-class DevNation1_temp
+class DevNation1
   def nation_name
     'abeforprez'
   end
@@ -29,7 +29,7 @@ class DevNation1_temp
   end
 end
 
-class DevNation2_temp
+class DevNation2
 	def nation_name
     '3dna'
   end
@@ -54,7 +54,7 @@ class DevNation2_temp
 
 end
 
-class DevNation1 #StagingNation1
+class DStagingNation1
 	def nation_name
     'regress'
   end

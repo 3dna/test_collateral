@@ -1,7 +1,7 @@
 Test: 
   read: 'true'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'regress'
+  token: '48ae78560dc179b3e992d8656ac860bea7f330bf7a5f07945a0fdd41d6ebee3e'
   endpoint: 'people'
   method: 'show'
   params: 
@@ -13,8 +13,8 @@ Test:
 
 Test2:
   read: 'true'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'regress'
+  token: '48ae78560dc179b3e992d8656ac860bea7f330bf7a5f07945a0fdd41d6ebee3e'
   endpoint: 'people'
   method: 'index'
   params: 
@@ -27,36 +27,36 @@ Test2:
 
 Test3:
   read: 'true'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'regress'
+  token: '48ae78560dc179b3e992d8656ac860bea7f330bf7a5f07945a0fdd41d6ebee3e'
   endpoint: 'people'
   method: 'match'
   params: 
-    email: 'dsingh.daiict@gmail.com'
+    email: 'lala@gmail.com'
   expected_position: 
     - 'person'
     - 'email'
-  expected_value: 'digi7@gmail.com'
+  expected_value: 'lala@gmail.com'
 
 Test4:
   read: 'true'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'regress'
+  token: '48ae78560dc179b3e992d8656ac860bea7f330bf7a5f07945a0fdd41d6ebee3e'
   endpoint: 'people'
   method: 'search'
   params: 
     first_name: 'digvijay'
   expected_position: 
     - 'results'
-    - 2
+    - 0
     - 'email'
-  expected_value: 'digi7@gmail.com'
+  expected_value: 'digvijay@nationbuilder.com'
   note: 'please check if the search results havent changed'
 
 create:
   read: 'false'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'regress'
+  token: '48ae78560dc179b3e992d8656ac860bea7f330bf7a5f07945a0fdd41d6ebee3e'
   endpoint: 'people'
   method: 'create'
   params: 
@@ -70,8 +70,8 @@ create:
 
 update:
   read: 'false'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'regress'
+  token: '48ae78560dc179b3e992d8656ac860bea7f330bf7a5f07945a0fdd41d6ebee3e'
   endpoint: 'people'
   method: 'update'
   params: 
@@ -86,8 +86,8 @@ update:
 
 destroy:
   read: 'false'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'regress'
+  token: '48ae78560dc179b3e992d8656ac860bea7f330bf7a5f07945a0fdd41d6ebee3e'
   endpoint: 'people'
   method: 'destroy'
   params: 
@@ -99,8 +99,8 @@ destroy:
 
 donor_index:
   read: 'false'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'regress'
+  token: '48ae78560dc179b3e992d8656ac860bea7f330bf7a5f07945a0fdd41d6ebee3e'
   endpoint: 'donations'
   method: 'index'
   params: 
@@ -114,8 +114,8 @@ donor_index:
 
 donor_create_existing:
   read: 'false'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'regress'
+  token: '48ae78560dc179b3e992d8656ac860bea7f330bf7a5f07945a0fdd41d6ebee3e'
   endpoint: 'donations'
   method: 'index'
   params: 
@@ -136,8 +136,8 @@ donor_create_existing:
 
 donor_create_new:
   read: 'false'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'regress'
+  token: '48ae78560dc179b3e992d8656ac860bea7f330bf7a5f07945a0fdd41d6ebee3e'
   endpoint: 'donations'
   method: 'index'
   params: 
@@ -158,8 +158,8 @@ donor_create_new:
 
 donor_update:
   read: 'false'
-  slug: 'sharksavers'
-  token: 'd5ec6b9f010cd861b5466ea5628f814be10312f6a308c15ad5796cca8f0db5fe'
+  slug: 'regress'
+  token: '48ae78560dc179b3e992d8656ac860bea7f330bf7a5f07945a0fdd41d6ebee3e'
   endpoint: 'donations'
   method: 'update'
   params: 
